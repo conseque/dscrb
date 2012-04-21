@@ -1,0 +1,5 @@
+askr.pl is to get some info from remote host
+
+to reduce code cmnds/files are stored in db
+
+others(sh|pl) are addons to fill/dump db with what to ask remote host
