@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 
+
 use Switch; my $ssh='SSH_AUTH_SOCK=/tmp/ssh-zhNBuE6383/agent.6383 ssh -o ConnectTimeout=2 root@';	# ssh auth
 use Redis::hiredis; my $r = Redis::hiredis->new(host=>"i",port=>6380);					# redis connection
 $r->select(5); my $hsto = @{$r->zrange(":IP:",-1,-1)}[0]; $r->select(15); my $OUT;			# host to connect
